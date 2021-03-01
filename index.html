@@ -39,13 +39,17 @@
             </div>
           </nav>
     </header>
+    
     <main class="container text-center mt-5 mb-5">
         <input id="input-field" class='bg-light custom-style' type="text" placeholder="&#xF002; Search for Meal..." style="font-family:Arial, FontAwesome" /><button id="search-btn" class="custom-btn">Search</button>
     </main>
 
     <section class="container mt-5">
-      <div id="search-result" class="row row-cols-1 row-cols-md-4 g-4">
-      </div>
+      <h1 id="error-message"></h1>
+
+      <div id="food-ingredients" class="ingredients"></div>
+
+      <div id="search-result" class="row row-cols-1 row-cols-md-4 g-4"></div>
     </section>
 
     <!-- Bootstrap Javascript cdn link -->
