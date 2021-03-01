@@ -1,0 +1,27 @@
+.nav-link{
+    font-weight: 600;
+    font-size:18px;
+    color: rgb(32, 31, 31)!important;
+    margin-right: 15px;
+}
+.custom-style{
+    width: 550px;
+    height: 60px;
+    padding: 20px;
+    border: none;
+    border-radius: 8px 0px 0px 8px;
+    outline: none;
+}
+.custom-btn{
+    width: 111px;
+    height: 60px;
+    border-radius: 0px 6px 6px 0px;
+    background-color: #f06c4e;
+    border: none;
+    color: white;
+}
+.card{
+    border: none!important;
+    border-radius: 10px!important;
+    cursor: pointer;
+}
