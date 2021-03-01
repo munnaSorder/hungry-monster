@@ -11,7 +11,7 @@ document.getElementById('search-btn').addEventListener('click', function() {
    .then(data => {
        data.meals.forEach(data => {
            console.log(data);
-           searchResult.innerHTML = `
+           searchResult.innerHTML += `
            <div class="col">
             <div class="card h-100">
                 <img src="${data.strMealThumb}" class="card-img-top" alt="...">
@@ -20,7 +20,8 @@ document.getElementById('search-btn').addEventListener('click', function() {
                 </div>
             </div>
          </div>
-           `
+        
+         `
        })
    })
 })
