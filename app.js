@@ -1,3 +1,4 @@
+// Search Result show function
 document.getElementById('search-btn').addEventListener('click', function() {
    const userInput = document.getElementById('input-field');
    const searchResult = document.getElementById('search-result');
@@ -22,12 +23,13 @@ document.getElementById('search-btn').addEventListener('click', function() {
        })
    })
    .catch(err => {
-    document.getElementById('error-message').innerHTML = `<h1 style="color:red" class="text-center">Sorry your keyword is wrong. You can search with ingredients such as egg, beef, etc.
+    document.getElementById('error-message').innerHTML = `<h1 style="color:red" class="text-center">Sorry your keyword is wrong. You can search with ingredients such as egg, beef, chicken, etc.
     </h1>`;
    })
    searchResult.innerHTML = ``;
 });
 
+// show food-ingredients function
 function foodIngredients(id){
     const ingredientsPopup = document.getElementById("food-ingredients");
     ingredientsPopup.style.display = "block";
@@ -57,7 +59,7 @@ function foodIngredients(id){
     })
 }
 
-
+// Result Popup close function
 function closeBtn(){
     const ingredientsPopup = document.getElementById("food-ingredients");
     ingredientsPopup.style.display = "none";
